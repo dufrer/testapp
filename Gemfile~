@@ -1,5 +1,6 @@
 source 'http://ruby.taobao.org'
 
+ruby '1.9.3'
 gem 'rails', '3.1.0'
 
 # Bundle edge Rails instead:
@@ -31,3 +32,7 @@ group :test do
   # Pretty printed test output
   gem 'turn', :require => false
 end
+
+group :production do 
+	gem 'pg', '0.15.1'
+end 
