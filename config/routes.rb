@@ -1,4 +1,9 @@
+# -*- encoding : utf-8 -*-
 Testapp::Application.routes.draw do
+  
+  devise_for :users, :controllers => { :sessions => "sessions" }
+
+  resources :home , :only=>[:index]
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -9,21 +14,6 @@ Testapp::Application.routes.draw do
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
-
-  # Sample resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
-
-  # Sample resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
 
   # Sample resource route with sub-resources:
   #   resources :products do
@@ -46,9 +36,7 @@ Testapp::Application.routes.draw do
   #     resources :products
   #   end
 
-  # You can have the root of your site routed with "root"
-  # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+   root :to => 'home#index'
 
   # See how all your routes lay out with "rake routes"
 
