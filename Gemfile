@@ -14,6 +14,10 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem "therubyracer"
+#gem "less-rails"  i don't wanna to use less so ...
+gem "twitter-bootstrap-rails"
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
@@ -30,3 +34,6 @@ gem 'devise'
 
 gem 'annotate'
 gem 'magic_encoding'
+
+# webserver
+gem 'thin'

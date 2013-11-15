@@ -85,7 +85,7 @@
     <script>
       $(function(){
         $('#example').popover();
-        
+        $('#example1').popover({'data-content':'还没发布呢。','data-original-title':'还没发布呢。', "data-toggle"=>"popover"});
       })
       
     </script>

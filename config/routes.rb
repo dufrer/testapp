@@ -1,6 +1,8 @@
 # -*- encoding : utf-8 -*-
 Testapp::Application.routes.draw do
   
+  resources :articles
+
   devise_for :users, :controllers => { :sessions => "sessions" }
 
   resources :home , :only=>[:index]
