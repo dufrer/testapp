@@ -39,4 +39,5 @@ gem 'magic_encoding'
 gem 'thin'
 
 #
-gem 'faraday'
+#gem 'faraday'
+gem 'daemons' , '1.1.9'
