@@ -40,4 +40,3 @@ gem 'thin'
 
 #
 #gem 'faraday'
-gem 'daemons' , '1.1.9'

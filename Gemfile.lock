@@ -140,7 +140,6 @@ PLATFORMS
 DEPENDENCIES
   annotate
   coffee-rails (~> 3.2.1)
-  daemons (= 1.1.9)
   devise
   jquery-rails
   magic_encoding
